@@ -33,7 +33,7 @@ function mudarC(event){
 
 //começar
 function start(){
-	if(cont >= 9){
+	if(cont >= 10){
 		contEmp ++;
 		let text = "Empates: "+contEmp;
 		document.getElementById("marEmpat").innerText = text;
