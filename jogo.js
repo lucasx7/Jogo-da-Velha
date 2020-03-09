@@ -54,6 +54,9 @@ function restart(){
 	jog = true;
 	cont = 0;
 	jogando = true;
+
+	let i = document.getElementById("vez").querySelector("img");
+	i.setAttribute("src",vez[(cont) % 2]);
 }
 
 //travar jogo
