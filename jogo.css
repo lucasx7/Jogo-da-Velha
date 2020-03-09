@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
+:root{
+	--var-ic-size: 120px;
+	--var-body-bg: #bbbbbb;
+	--table-bg: #888888;
+}
+body{
+	background-color: var(--var-body-bg);
+	font-family: 'Titillium Web';  
+}
+#tela {
+	align-items: center;
+	margin-left: 18%;
+	margin-right: 20%;
+	height: auto;
+}
+#vez{
+	/*margin-left: 150px;*/
+	flex:1;
+}
+#vez img{
+	max-height: var(--var-ic-size);
+	max-width: var(--var-ic-size);
+}
+#all{
+	margin-left: auto;
+	margin-right: auto;
+	width: 600px;
+	background-color: var(--table-bg);	
+	border-radius: 5%;
+}
+table {
+	width: 400px;
+	height: 400px;
+	border: #000000 2px solid;
+	border-radius: 3%;
+}
+td {
+	border: #000000 1px solid;
+	border-radius: 5%;
+	padding: 0;
+	width:129.333px;
+	height: 129.333px;
+}
+td img{
+	max-height: var(--var-ic-size);
+	max-width: var(--var-ic-size);
+}
+
+#resultados{
+	align-self: left;
+	width: 100px;
+	flex:1;
+}
+#vazio{
+	flex:1;
+}
+
+.flexbox{
+	display: flex;
+	justify-content: space-between;
+	width: 400px;
+}
+
+.clicado{
+	border: 3px solid #1318a9;
+	box-sizing: border-box;
+}
+
+.vencedor{
+	border: 3px solid #13a918;
+	box-sizing: border-box;
+}

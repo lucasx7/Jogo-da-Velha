@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jogo da Velha</title>
+	<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+	<link rel="stylesheet" type="text/css" href="jogo.css">
+
+</head>
+<body>
+	<div id="all">
+		<div id="tela">
+			<div  class="flexbox">
+				<div id="resultados">
+					<p id="marX">Vitórias do X: </p>
+					<p id="marO">Vitórias do O: </p>
+					<p id="marEmpat">Empates: </p>
+				</div>			
+				<div id="vez">
+					<p>Vez do: </p>
+					<img src="img/x.png">
+				</div>
+				<div id="vazio">
+				</div>
+				<!--<div>
+				</div>
+				<div>
+				</div>
+				<div>
+				</div>-->			
+			</div>			
+			<table id="campo">
+				<tr>
+					<td id="c0" onclick="mudarC(event)"><img></img></td>
+					<td id="c1" onclick="mudarC(event)"><img></img></td>
+					<td id="c2" onclick="mudarC(event)"><img></img></td>
+				</tr>
+				<tr>
+					<td id="c3" onclick="mudarC(event)"><img></img></td>
+					<td id="c4" onclick="mudarC(event)"><img></img></td>
+					<td id="c5" onclick="mudarC(event)"><img></img></td>
+				</tr>
+				<tr>
+					<td id="c6" onclick="mudarC(event)"><img></img></td>
+					<td id="c7" onclick="mudarC(event)"><img></img></td>
+					<td id="c8" onclick="mudarC(event)"><img></img></td>
+				</tr>
+			</table>
+			<button onclick="restart()">Recomeçar</button>
+		</div>
+	</div>
+<script src="jogo.js"></script>
+</body>
+</html>
