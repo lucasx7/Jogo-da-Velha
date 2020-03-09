@@ -33,14 +33,13 @@ function mudarC(event){
 
 //começar
 function start(){
-	if(cont >= 10){
-		contEmp ++;
-		let text = "Empates: "+contEmp;
-		document.getElementById("marEmpat").innerText = text;
-		trav_j();
-	}
-	else if(cont >=4){
+	if(cont <=9){
 		verif_tab();
+		if(cont === 9 && jogando == true){
+			contEmp ++;
+			let text = "Empates: "+contEmp;
+			document.getElementById("marEmpat").innerText = text;	
+		}
 	}
 }
 
